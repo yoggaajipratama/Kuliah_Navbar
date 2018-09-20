@@ -7,3 +7,6 @@ kamper, dll.
 - Aplikasi menggunakan erlang
 - ReatcJs
 ```
+- git config --global user.email
+ "yoggaajipratama99@gmail.com" 
+- git config --global user.name "yoggaajipratama"
