@@ -1,41 +1,117 @@
 <html>
+
 <head>
 	<title>Profile Pages</title>
-	<style type="text/css" media="screen">
-		div{
-			border-style: solid;
-			background-color: #cecece;
-		}
-		.navbar ul{
-			
-		}
-		.navbar ul li{
-			
-		}
-		.navbar ul li a{
-			
-		}
-		.navbar ul li a:hover{
-			
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css" />
+	<style>
+		.nav {
+			position: fixed !important;
+			height: 60px !important;
+			width: 100% !important;
+			z-index: 1000 !important;
+			top: 0;
+			left: 0;
+			backdrop-filter: blur(10px);
 		}
 
+		.content {
+			margin-top: 60px !important;
+		}
 	</style>
 </head>
-<body>
-	<div class="navbar">
-		ini navbar
-		<ul>
-			<li><a href="">Home</a></li>
-			<br>
-			<li><a href="">Task</a></li>
-		</ul>
 
+<body>
+	<div class="nav">
+		<nav>
+			<ul>
+				<li>
+					<a href="" onclick="menu(event)">Menu</a>
+					<a href="#biodata">Biodata</a>
+					<a href="#biografi">Biografi</a>
+				</li>
+				<span id="trytext" style="display: none;">
+					<li>
+						<a href="#home">- Home</a>
+					</li>
+					<li>
+						<a href="#task">- Task</a>
+					</li>
+				</span>
+			</ul>
+		</nav>
 	</div>
-	<div class="container">
-		ini container
-	</div>
-	<div class="footer">
-		ini footer
+
+	<div class="content">
+		<div class="text-center">
+			<h1>Biodata & Biografi</h1>
+		</div>
+
+		<div class="container-fluid" id="biodata">
+			<center>
+				<table class="table table-hover">
+					<tr>
+						<img src="bootstrap/images/yogga.jpg" class="photo" />
+					</tr>
+					<tr>
+						<th>Name</th>
+						<td>Yogga Aji Pratama</td>
+					</tr>
+					<tr>
+						<th>Date of Birth</th>
+						<td>June 03, 1999</td>
+					</tr>
+					<tr>
+						<th>Gender</th>
+						<td>Male</td>
+					</tr>
+					<tr>
+						<th>Address</th>
+						<td>Bandung</td>
+					</tr>
+					<tr>
+						<th>Nationality</th>
+						<td>Indonesia</td>
+					</tr>
+					<tr>
+						<th>Language Known</th>
+						<td>Sunda, Indonesian</td>
+					</tr>
+					<tr>
+						<th>Job</th>
+						<td>Student</td>
+					</tr>
+				</table>
+			</center>
+		</div>
+
+		<div class="container-fluid p-3" id="biografi">
+			<p>
+				Halo nama saya Yogga Aji Pratama, saya pernah bersekolah di SDN
+				Cangkuang I lalu dilanjutkan ke tingkat SMP di MTS Al-Huda Rancaekek
+				setelah itu saya bersekolah di SMK TIK Yadika Cicalengka dengan
+				jurusan TKJ. Dan sekarang saya kuliah di UIN Sunan Gunung Djati
+				Bandung dengan jurusan Teknik Informatika. Saya Sekarang semester 5
+				dan ini adalah halaman web yang saya buat untuk memenuhi tugas
+				Praktikum Pengembangan Aplikasi Web.
+			</p>
+		</div>
+
+		<div id="#kontak" class="text rounded mt-1">
+			<center>Contact Person WA: 08X-XXX-XXX-XX</center>
+		</div>
 	</div>
 </body>
+<script>
+	function menu(e) {
+		e.preventDefault()
+		var el = document.getElementById("trytext")
+		if (el.style.display === "none") {
+			el.style.display = "block"
+		}
+		else {
+			el.style.display = "none"
+		}
+	}
+</script>
+
 </html>

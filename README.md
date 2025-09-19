@@ -2,7 +2,7 @@
 Profile page adalah sebuah halaman untuk menampilkan biografi mahasiswa
 
 # Spesification
--NavBar
+-NavBar Dropdown
 	-Home
 	-Task
 -Container
