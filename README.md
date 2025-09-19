@@ -11,3 +11,6 @@ Profile page adalah sebuah halaman untuk menampilkan biografi mahasiswa
 	-Description
 -Footer
 	(Copyright @ 2018)
+
+![Foto](localhost1.png)
+![Foto](localhost2.png)
